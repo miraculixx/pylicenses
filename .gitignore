@@ -123,3 +123,6 @@ dmypy.json
 .venv/
 
 # End of https://www.gitignore.io/api/python
+/.idea/modules.xml
+/.idea/pylicenses.iml
+/.idea/workspace.xml

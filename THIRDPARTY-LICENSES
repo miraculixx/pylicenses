@@ -271,11 +271,11 @@ DEALINGS IN THE SOFTWARE.
 
 --
 Package: tabulate
-Version: 0.7.5
+Version: 0.8.2
 Author: Sergey Astanin
-License: MIT License
+License: MIT
 Home-page: https://bitbucket.org/astanin/python-tabulate
-Source: https://repo.anaconda.com/pkgs/free/linux-64/tabulate-0.7.5-py35_0.tar.bz2
+Source: https://repo.anaconda.com/pkgs/main/linux-64/tabulate-0.8.2-py37_0.tar.bz2
 Licence Text:
 Copyright (c) 2011-2017 Sergey Astanin
 
@@ -332,7 +332,7 @@ Version: 40.6.2
 Author: Python Packaging Authority
 License: MIT License
 Home-page: https://github.com/pypa/setuptools
-Source: https://repo.anaconda.com/pkgs/free/linux-64/setuptools-7.0-py34_0.tar.bz2
+Source: https://repo.anaconda.com/pkgs/main/linux-64/setuptools-40.6.2-py37_0.tar.bz2
 Licence Text:
 Copyright (C) 2016 Jason R Coombs <jaraco@jaraco.com>
 
@@ -382,7 +382,7 @@ Version: 18.1
 Author: The pip developers
 License: MIT
 Home-page: https://pip.pypa.io/
-Source: https://repo.anaconda.com/pkgs/free/linux-64/pip-9.0.1-py36_1.tar.bz2
+Source: https://repo.anaconda.com/pkgs/main/linux-64/pip-9.0.3-py36_0.tar.bz2
 Licence Text:
 MIT License
 
@@ -501,7 +501,7 @@ Version: 3.0.4
 Author: Daniel Blanchard
 License: GNU Lesser General Public License v2.1
 Home-page: https://github.com/chardet/chardet
-Source: https://repo.anaconda.com/pkgs/main/linux-64/chardet-3.0.4-py37_1.tar.bz2
+Source: https://repo.anaconda.com/pkgs/free/linux-64/chardet-3.0.4-py36_0.tar.bz2
 Licence Text:
 		  GNU LESSER GENERAL PUBLIC LICENSE
 		       Version 2.1, February 1999
@@ -1014,7 +1014,7 @@ Version: 2018.11.29
 Author: Kenneth Reitz
 License: MPL-2.0
 Home-page: https://certifi.io/
-Source: https://repo.anaconda.com/pkgs/free/linux-64/certifi-2016.2.28-py36_0.tar.bz2
+Source: https://repo.anaconda.com/pkgs/main/linux-64/certifi-2018.8.24-py37_1.tar.bz2
 Licence Text:
 This packge contains a modified version of ca-bundle.crt:
 
@@ -1279,11 +1279,11 @@ Licence Text:
 
 --
 Package: python
-Version: 3.6.2
+Version: 3.3.0
 Author: None
 License: PSF
 Home-page: None
-Source: https://repo.anaconda.com/pkgs/free/linux-64/python-3.6.2-0.tar.bz2
+Source: https://repo.anaconda.com/pkgs/pro/linux-64/python-3.3.0-pro1.tar.bz2
 Licence Text:
 A. HISTORY OF THE SOFTWARE
 ==========================
@@ -1542,11 +1542,11 @@ OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 --
 Package: readline
-Version: 7.0
+Version: 6.2
 Author: None
 License: GPL3
 Home-page: None
-Source: https://repo.anaconda.com/pkgs/main/linux-64/readline-7.0-hb321a52_4.tar.bz2
+Source: https://repo.anaconda.com/pkgs/free/linux-64/readline-6.2-2.tar.bz2
 Licence Text:
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
@@ -2234,20 +2234,20 @@ Licence Text:
 None
 --
 Package: tk
-Version: 8.5.18
+Version: 8.6.8
 Author: None
-License: BSD-like
+License: Tcl/Tk
 Home-page: None
-Source: https://repo.anaconda.com/pkgs/free/linux-64/tk-8.5.18-0.tar.bz2
+Source: https://repo.anaconda.com/pkgs/main/linux-64/tk-8.6.8-hbc83047_0.tar.bz2
 Licence Text:
 None
 --
 Package: xz
-Version: 5.2.4
+Version: 5.2.3
 Author: None
-License: LGPL-2.1 and GPL-2.0
+License: Public-Domain, GPL
 Home-page: None
-Source: https://repo.anaconda.com/pkgs/main/linux-64/xz-5.2.4-h14c3975_4.tar.bz2
+Source: https://repo.anaconda.com/pkgs/free/linux-64/xz-5.2.3-0.tar.bz2
 Licence Text:
 
 XZ Utils Licensing
@@ -2317,11 +2317,11 @@ XZ Utils Licensing
 
 --
 Package: zlib
-Version: 1.2.11
+Version: 1.2.8
 Author: None
 License: zlib
 Home-page: None
-Source: https://repo.anaconda.com/pkgs/main/linux-64/zlib-1.2.11-hfbfcf68_1.tar.bz2
+Source: https://repo.anaconda.com/pkgs/free/linux-64/zlib-1.2.8-3.tar.bz2
 Licence Text:
   zlib.h -- interface of the 'zlib' general purpose compression library
   version 1.2.7, May 2nd, 2012

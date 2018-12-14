@@ -11,6 +11,7 @@ class PyPiProvider(PackageProvider):
     """
     Use pypi.org and github to retrieve package data (pypi) and license content (github)
     """
+    init_kwargs = ['github_auth']
 
     def __init__(self, github_auth=None):
         self.github_auth = github_auth

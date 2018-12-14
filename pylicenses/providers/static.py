@@ -1,7 +1,9 @@
 import requests
 
+from pylicenses.providers import PackageProvider
 
-class StaticProvider(object):
+
+class StaticProvider(PackageProvider):
     """
     Map packages to static file or url references
     """

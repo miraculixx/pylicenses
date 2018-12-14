@@ -75,9 +75,12 @@ class PyLicensesTests(TestCase):
         self.assertEqual(info['license_trace'], 'conda local package')
         self.assertIn('license_text', info)
 
-    def test_primary_packages(self):
+    def test_discover_package_dependencies(self):
         lic = PyLicenses()
         lic.discover()
-        lic.get_primary_packages()
+        lic.discover_package_dependencies()
+        packages = lic.packages
+        for pkg, data in packages.items():
+            self.assertIn('required_by', data)
 
 

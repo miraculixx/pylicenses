@@ -8,10 +8,18 @@ from pylicenses.providers.static import StaticProvider
 
 version = '0.1'
 
+
 class PyLicenses(object):
     """
     Extensible dependencies license finder
     """
+    PROVIDERS = {
+        'primary': [PipProvider, CondaProvider],
+        'fallback': [StaticProvider,
+                     CondaChannelProvider,
+                     PyPiProvider,
+        ]
+    }
 
     def __init__(self, github_auth=None):
         """
@@ -21,15 +29,16 @@ class PyLicenses(object):
         # a pipeline of providers
         # TODO unify all providers into one pipeline and use an n-pass strategy to execute
         #      until no progress is made (progress = reduce #missing packages)
-        github_auth = tuple(github_auth) if github_auth else None
-        self.providers = {
-            'primary': [PipProvider(), CondaProvider()],
-            'fallback': [StaticProvider(),
-                         CondaChannelProvider(),
-                         PyPiProvider(github_auth=github_auth),
-                         ]
-        }
+        self.github_auth = tuple(github_auth) if github_auth else None
         self._packages = defaultdict(dict)
+        self.providers = defaultdict(list)
+        # initialize providers, passing information
+        for kind, provs in PyLicenses.PROVIDERS.items():
+            for provCls in provs:
+                kwargs = {
+                    kwarg: getattr(self, kwarg) for kwarg in provCls.init_kwargs
+                }
+                self.providers[kind].append(provCls(**kwargs))
 
     @property
     def packages(self):
@@ -119,4 +128,3 @@ class PyLicenses(object):
                 packages[pkg]['required_by'] = required_by
                 packages[pkg]['is_primary'] = not required_by
         return self
-
