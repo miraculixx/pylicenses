@@ -10,7 +10,8 @@ from pylicenses.providers import PackageProvider
 
 
 class PipProvider(PackageProvider):
-    def get_package_metadata(self, pkg):
+    @staticmethod
+    def get_package_metadata(pkg):
         # adopted from https://stackoverflow.com/a/19086260
         # PKG-INFO is in email format. since Metadata 2.1 format description may
         #          be in the body or header.
@@ -34,7 +35,8 @@ class PipProvider(PackageProvider):
                 break
         return data
 
-    def find_license_files(self):
+    @staticmethod
+    def find_license_files():
         files = []
         for path in sys.path:
             if not 'site-packages' in path:
@@ -63,7 +65,7 @@ class PipProvider(PackageProvider):
             else:
                 name = name_parts[0]
             license_file = path
-            with open(license_file, 'r') as fin:
+            with open(license_file, 'r', encoding="ISO-8859-1") as fin:
                 text = fin.read()
             license = {
                 'dist_name': dist_name,

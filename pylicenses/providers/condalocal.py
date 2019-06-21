@@ -88,7 +88,7 @@ class CondaProvider(PackageProvider):
             else:
                 name = name_parts[0]
             license_file = path
-            with open(license_file, 'r') as fin:
+            with open(license_file, 'r', encoding="ISO-8859-1") as fin:
                 text = fin.read()
             license = {
                 'dist_name': dist_name,
