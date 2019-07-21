@@ -1,3 +1,4 @@
-sh==1.12.14
-requests==2.21.0
-tabulate==0.8.2
+pip
+sh
+requests
+tabulate

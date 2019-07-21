@@ -2,7 +2,10 @@ import os
 from setuptools import setup, find_packages
 from pylicenses import version
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
+
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -25,9 +28,5 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
-    install_requires=[
-        'sh==1.12.14',
-        'requests==2.21.0',
-        'tabulate==0.8.2',
-    ],
+    install_requires=requirements,
 )

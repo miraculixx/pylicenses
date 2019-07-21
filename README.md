@@ -40,11 +40,11 @@ How to use
 
 Within your conda or pip virtualenv, run
 
-    $ python -m pylicense
+    $ python -m pylicenses
 
 To see options
 
-    $ python -m pylicense -h
+    $ python -m pylicenses -h
     usage: __main__.py [-h] [--github GITHUB] [--stats STATS]
 
     optional arguments:
@@ -60,7 +60,7 @@ collection report of this package.
 
 The direct output looks something like this
 
-    $ python -m pylicense
+    $ python -m pylicenses
     Packages directly required:
 
     name        author                      license
