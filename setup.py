@@ -27,7 +27,7 @@ setup(
     ],
     install_requires=[
         'sh==1.12.14',
-        'requests==2.21.0',
+        'requests==2.31.0',
         'tabulate==0.8.2',
     ],
 )
